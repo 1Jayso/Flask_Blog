@@ -79,3 +79,10 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
