@@ -17,7 +17,6 @@ app.config['WHOOSH_BASE'] = 'whoosh'
 db = SQLAlchemy(app)
 # Flask bcrypt instance
 bcrypt = Bcrypt(app)
-login_manager = LoginManager(app)
 login_manager.login_view = "login"
 login_manager.login_message_category = "info"
 
@@ -26,9 +25,9 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": "adodey1@gmail.com",
+    "MAIL_USERNAME":"#",
     
-    "MAIL_PASSWORD": "Chemistry@6469"
+    "MAIL_PASSWORD": "#"
 }
 
 app.config.update(mail_settings)
