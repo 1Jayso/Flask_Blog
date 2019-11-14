@@ -12,7 +12,12 @@ __pycache__/
 # C extensions
 *.so
 
+.MAIL_PASSWORD
+.MAIL_USERNAME
+
 # Distribution / packaging
+.env
+venv
 .Python
 build/
 develop-eggs/
