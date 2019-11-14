@@ -77,6 +77,8 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+.venv
+.Venv
 
 # Sphinx documentation
 docs/_build/
