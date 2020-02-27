@@ -16,6 +16,7 @@ app.config["DEBUG"] = True
 app.config['WHOOSH_BASE'] = 'whoosh'
 db = SQLAlchemy(app)
 # Flask bcrypt instance
+login_manager=LoginManager()
 bcrypt = Bcrypt(app)
 login_manager.login_view = "login"
 login_manager.login_message_category = "info"
