@@ -17,6 +17,7 @@ app.config['WHOOSH_BASE'] = 'whoosh'
 db = SQLAlchemy(app)
 # Flask bcrypt instance
 login_manager=LoginManager()
+login_manager.init_app(app) 
 bcrypt = Bcrypt(app)
 login_manager.login_view = "login"
 login_manager.login_message_category = "info"
@@ -33,7 +34,6 @@ mail_settings = {
 
 app.config.update(mail_settings)
 mail = Mail(app)
-
 
 
 
