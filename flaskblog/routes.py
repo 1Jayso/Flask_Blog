@@ -43,7 +43,8 @@ def home():
 @app.route('/search')
 def search():
     q = request.args.get('q')
-    posts = Post.query.z(q).all()
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.filter(Post.content.contains(q)).paginate(page=page, per_page=5)
     return render_template('home.html', posts=posts)  
 
 @app.route('/about')
