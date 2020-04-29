@@ -23,7 +23,7 @@ def insert_data():
     
     joseph = User(username="Jokoto", email="jokoto@example.com", password="test")
     db.session.add(joseph)
-    
+    # 0241676578 Deborah
     def add_post(title, content):
         db.session.add(Post(title=title, content=content, author=joseph))
 
